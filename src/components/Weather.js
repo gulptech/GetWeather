@@ -27,7 +27,7 @@ var Weather = React.createClass({
   render: function() {
     var {isLoading, temp, location, errorMsg} = this.state;
 
-    let renderMessage = (isLoading)? <h3 className="text-center">Fetching weather...</h3> : (temp && location)? <WeatherMessage temp={temp} location={location} />: (this.state.errorMsg) ? <ErrorModal title="Request Error" message="City Not Found"/> : '';
+    let renderMessage = (isLoading)? <h3 className="text-center">Fetching weather...</h3> : (temp && location)? <WeatherMessage temp={temp} location={location} />: (this.state.errorMsg) ? <ErrorModal title="Search Error" message="City Not Found"/> : '';
 
     return (
       <div>
