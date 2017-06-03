@@ -2,6 +2,7 @@ var React = require('react');
 var WeatherForm = require('WeatherForm');
 var WeatherMessage = require('WeatherMessage');
 var CurrentWeather = require('openWeatherMap');
+var ErrorModal = require('ErrorModal');
 
 var Weather = React.createClass({
   getInitialState: function() {
@@ -26,7 +27,7 @@ var Weather = React.createClass({
   render: function() {
     var {isLoading, temp, location, errorMsg} = this.state;
 
-    let renderMessage = (isLoading)? <h3 className="text-center">Fetching weather...</h3> : (temp && location)? <WeatherMessage temp={temp} location={location} />: (this.state.errorMsg) ? <h3 class="text-center">City Not Found</h3> : '';
+    let renderMessage = (isLoading)? <h3 className="text-center">Fetching weather...</h3> : (temp && location)? <WeatherMessage temp={temp} location={location} />: (this.state.errorMsg) ? <ErrorModal title="Request Error" message="City Not Found"/> : '';
 
     return (
       <div>
