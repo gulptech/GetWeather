@@ -4,7 +4,7 @@ var {Link} = require('react-router');
 var About = (props) => {
   return (
     <div>
-      <h1 className="text-center">About Us</h1>
+      <h1 className="text-center page-title">About Us</h1>
       <p>Here are some links for you to look at.</p>
       <ul>
         <li><Link to="https://facebook.github.io/react">ReactJS</Link></li>
