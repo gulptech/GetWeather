@@ -9,7 +9,8 @@ var About = (props) => {
       <ul>
         <li><Link to="https://facebook.github.io/react">ReactJS</Link></li>
         <li><Link to="http://foundation.zurb.com">Foundation</Link></li>
-        <li><Link to="https://www.openweathermap.org">open Weather Map</Link></li>
+        <li><Link to="https://www.openweathermap.org">Open Weather Map</Link></li>
+        <li><Link to="https://github.com/gulptech/GetWeather">Get Weather Git Repo</Link></li>
       </ul>
     </div>
   )
